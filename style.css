@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#80794aa9 ;
+    display: flex;
+    
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: blueviolet;
+    background-image: url('engin-akyurt-ZQuTDfWDkUE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(#80794aa9);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: green;
+    line height = font size */
+}
+#text-div{
+    height: 300px;
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 10%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#text-div>h1{
+    font-size: 95px;
+    font-family: sans-serif, Haettenschweiler, 'Arial Narrow Bold', ;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 75px; 
+    color: white;
+    letter-spacing: 7px;
+}
+#small-img-div{
+    background-image: url('engin-akyurt-ca1qVsWvcKQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+}
+#verticaltext{
+    position: absolute;
+    right: -20%;
+    top: 60%;
+    animation: marquee 5s linear infinite;
+   
+    transform-origin: 0%,0%;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+#verticaltext>h1{
+    font-size: 75px;
+    font-weight: 900;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 10px;
+    transform: rotate(90deg);
+    transform-origin: 0%,0%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    left: 30%;
+    top: 5%;
+    /* background: red; */
+}
+#nav img{
+    height: 60px;
+    animation: spin 5s linear infinite;
+}
+#nav h5{
+    color: white;
+    font-size: 20px;
+}
+@keyframes marquee {
+    0% {
+        top: 100%; 
+    }
+    100% {
+        top: -100%; 
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
